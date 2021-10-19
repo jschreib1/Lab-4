@@ -1,4 +1,4 @@
-#!/usr/bin/python37all
+#!/usr/bin/cgipython1
 import cgi
 import RPi.GPIO as GPIO #import RPi.GPIO module
 from time import sleep # import time.sleep()
