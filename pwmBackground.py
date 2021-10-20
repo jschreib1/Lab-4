@@ -24,13 +24,13 @@ pwm3.start(0)
 while True:
   with open("led-pwm-multiple.txt", 'r') as f:
     data = json.load(f) # read duty cycle value from file
-    dc = int(data['slider1'])
+    dc = data['slider1']
     led = data['LED']
   if led == 'a': 
-    pwm1.ChangeDutyCycle(dc)
+    pwm1.ChangeDutyCycle(int(dc))
   elif led == 'b':
-    pwm2.ChangeDutyCycle(dc)
+    pwm2.ChangeDutyCycle(int(dc))
   elif led == 'c':
-    pwm3.ChangeDutyCycle(dc)
+    pwm3.ChangeDutyCycle(int(dc))
   
   sleep(0.1)
