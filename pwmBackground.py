@@ -24,7 +24,7 @@ while True:
   with open("led_pwm.txt", 'r') as f:
     data = json.load(f) # read duty cycle value from file
     dc = int(data['slider1'])
-    led = data['LED']
+    led = str(data['LED'])
   if led == 'a': 
     pwm1.ChangeDutyCycle(dc)
   elif led == 'b':
