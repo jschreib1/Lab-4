@@ -16,11 +16,11 @@ with open('led-pwm-multiple.txt', 'w') as f:
 
 print('<html>')
 print('<form action="/cgi-bin/pwm.py" method="POST">')
-print('<input type="range" name="slider1" min="0" max="100" value="%s"><br>' % s1)
 print('<input type="radio" name="LED" value="a" checked> LED A <br>')
 print('<input type="radio" name="LED" value="b"> LED B <br>')
 print('<input type="radio" name="LED" value="c"> LED C <br>')
 print('<input type="submit" value="Change LED brightness">')
+print('<input type="range" name="slider1" min="0" max="100" value="%s"><br>' % s1)
 print('</form>')
 print('Brightness = %s' % s1)
 print('</html>')
