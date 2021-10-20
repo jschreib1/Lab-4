@@ -4,6 +4,7 @@ import RPi.GPIO as GPIO #import RPi.GPIO module
 from time import sleep # import time.sleep()
 GPIO.setwarnings(False)
 
+GPIO.setmode(GPIO.BCM)
 pins = {}
 p1 = 4
 p2 = 17
