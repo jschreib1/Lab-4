@@ -22,7 +22,7 @@ pwm1.start(0) # start with LED off
 pwm2.start(0)
 pwm3.start(0)
 while True:
-  with open("led_pwm.txt", 'r') as f:
+  with open("led-pwm-multiple.txt", 'r') as f:
     data = json.load(f) # read duty cycle value from file
     dc = int(data['slider1'])
     led = str(data['LED'])

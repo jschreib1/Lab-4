@@ -11,7 +11,7 @@ data= cgi.FieldStorage()
 s1 = data.getvalue('slider1')
 s2 = data.getvalue('LED')
 data = {"slider1":s1, "LED":s2}
-with open('led_pwm.txt', 'w') as f:
+with open('led-pwm-multiple.txt', 'w') as f:
   json.dump(data,f)
 
 print('<html>')
